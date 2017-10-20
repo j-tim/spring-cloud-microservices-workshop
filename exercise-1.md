@@ -67,8 +67,10 @@ java -jar -Dspring.profiles.active=dutch target/spring-boot-greeting-service-0.0
 
 ### Run using Maven
 
+With specific Portuguese profile
+
 ```
-mvn spring-boot:run -Dspring.profiles.active="portugese"
+mvn spring-boot:run -Dspring.profiles.active=portuguese
 ```
 
 ## Check your running application
