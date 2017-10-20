@@ -1,5 +1,5 @@
-# The bootstrap.yml file should only contain the information needed to reach out to the config server!
-# or to Eureka (see exercise 3)
+# The bootstrap.yml file should only contain the information needed to reach out to Eureka
+# And resolve the config server via Eureka
 
 spring:
   application:
@@ -7,4 +7,6 @@ spring:
 
   cloud:
     config:
-      uri: http://localhost:8888
+      discovery:
+        enabled: true
+        service-id: config-server

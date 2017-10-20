@@ -23,6 +23,7 @@
     <modules>
         <module>spring-boot-greeting-service</module>
         <module>spring-cloud-config-server</module>
+        <module>spring-cloud-service-registry</module>
     </modules>
 
     <dependencyManagement>

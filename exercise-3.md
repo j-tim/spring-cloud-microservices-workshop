@@ -3,6 +3,7 @@
 ## Goal
 
 * Build a Spring Cloud Service registry using Spring Boot
+* Register the Spring Cloud config server at Eureka  
 * Register your "Greeting" service at Eureka
 * Resolve the Cloud Cloud config server via Eureka 
 
@@ -11,6 +12,7 @@
 * http://projects.spring.io/spring-cloud/
 * https://start.spring.io
 * https://spring.io/guides/gs/service-registration-and-discovery/
+* http://projects.spring.io/spring-cloud/spring-cloud.html#_service_discovery_eureka_clients
 
 Hints:
 
@@ -18,6 +20,7 @@ Hints:
 * Register the config server at Eureka
 
 Starter dependencies:
+* spring-cloud-starter-eureka-server
 * spring-cloud-starter-eureka
 
 ## Run the applications
@@ -30,7 +33,13 @@ mvn clean package
 
 ### Run the executable jar
 
-First start the config server:
+First start the service registry: 
+
+```
+java -jar spring-cloud-service-registry/target/spring-cloud-service-registry-0.0.1-SNAPSHOT.jar
+```
+
+Second start the config server:
 
 ```
 java -jar spring-cloud-config-server/target/spring-cloud-config-server-0.0.1-SNAPSHOT.jar
@@ -50,7 +59,14 @@ java -jar -Dspring.profiles.active=dutch spring-boot-greeting-service/target/spr
 
 ### Run using Maven
 
-First start the config server:
+First start the service registry:
+
+```
+cd spring-cloud-service-registry
+mvn spring-boot:run
+```
+
+Second start the config server:
 
 ```
 cd spring-cloud-config-server
@@ -74,7 +90,8 @@ http://config-server:8888/{spring.application.name}/{profile}
 
 ## Check your running application
 
-[http://localhost:8080/](http://localhost:8080/)
+* Greeting Service: [http://localhost:8080/](http://localhost:8080/)
+* Service Registry: [http://localhost:8761/](http://localhost:8761/)
 
 ## Actuator endpoints
 
