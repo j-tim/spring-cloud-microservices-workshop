@@ -1,0 +1,11 @@
+# This is the "default" profile
+
+greeting:
+  message: Hello World
+
+info:
+  app:
+    name: Greeting Service
+    description: My First Spring Boot App whoot, whoot...
+    java-vendor: ${java.specification.vendor}
+    java-version: ${java.version}

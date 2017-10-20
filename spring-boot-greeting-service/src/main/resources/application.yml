@@ -1,37 +1,12 @@
-# This is the "default" profile
-
-greeting:
-  message: Hello World
-
-
 info:
   app:
-    name: Greeting Service
-    description: My First Spring Boot App whoot, whoot...
     version: @project.version@
-    java-vendor: ${java.specification.vendor}
-    java-version: ${java.version}
+    # The configuration from the config server takes precedence over local configuration!
+    description: "Can i override the description?"
 
----
+    # This property is not served by the config server. So this "local" property will be picked up!
+    anotherDescription: "Make Jar not War!"
 
-# Specific profile for Portuguese
-# The info endpoint configuration will be "inherited" from the default profile but you are still
-# able to override property values in this profile.
-
-spring:
-  profiles: portuguese
-
-greeting:
-  message: Olá Mundo
-
----
-
-# Specific profile for Dutch
-# The info endpoint configuration will be "inherited" from the default profile but you are still
-# able to override property values in this profile.
-
-spring:
-  profiles: dutch
-
-greeting:
-  message: Hallo Wereld
+# Expose all Spring Boot Actuator endpoints
+endpoints:
+  sensitive: false

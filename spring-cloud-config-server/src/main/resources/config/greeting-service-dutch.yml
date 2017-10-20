@@ -1,0 +1,6 @@
+# Specific profile for Dutch
+# The info endpoint configuration will be "inherited" from the default profile but you are still
+# able to override property values in this profile.
+
+greeting:
+  message: Hallo Wereld
