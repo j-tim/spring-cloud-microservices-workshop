@@ -22,6 +22,7 @@ Starter dependencies:
 
 * spring-cloud-starter-zuul
 * spring-cloud-starter-eureka
+* spring-cloud-config-client
 
 ## Run the applications
 
@@ -43,6 +44,12 @@ Second start the config server:
 
 ```
 java -jar spring-cloud-config-server/target/spring-cloud-config-server-0.0.1-SNAPSHOT.jar
+```
+
+Start the API gateway:
+
+```
+java -jar spring-cloud-api-gateway/target/spring-cloud-api-gateway-0.0.1-SNAPSHOT.jar
 ```
 
 Then run the greeting service:
@@ -73,6 +80,13 @@ cd spring-cloud-config-server
 mvn spring-boot:run
 ```
 
+Start the API gateway:
+
+```
+cd spring-cloud-api-gateway
+mvn spring-boot:run
+```
+
 With specific Portuguese profile:
 
 ```
@@ -90,8 +104,9 @@ http://config-server:8888/{spring.application.name}/{profile}
 
 ## Check your running application
 
-* Greeting Service: [http://localhost:8080/](http://localhost:8080/)
 * Service Registry: [http://localhost:8761/](http://localhost:8761/)
+* Greeting Service: [http://localhost:8080/](http://localhost:8080/)
+* Greeting Service via API Gateway: [http://localhost:8090/api/workshop/greeting-service/greeting](http://localhost:8090/api/workshop/greeting-service/greeting)
 
 ## Actuator endpoints
 

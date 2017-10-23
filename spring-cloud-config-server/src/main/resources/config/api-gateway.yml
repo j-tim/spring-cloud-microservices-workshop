@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-gateway
+
+info:
+  component: api-gateway
+
+zuul:
+  retryable: true
+  ignoredServices: '*'
+  routes:
+    greeting-service:
+      path: /api/workshop/greeting-service/**
+      serviceId: greeting-service

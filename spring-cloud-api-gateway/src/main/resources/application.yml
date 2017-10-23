@@ -1,0 +1,7 @@
+#info:
+#  app:
+#    version: @project.version@
+
+# Expose all Spring Boot Actuator endpoints
+endpoints:
+  sensitive: false

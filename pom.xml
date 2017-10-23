@@ -24,6 +24,7 @@
         <module>spring-boot-greeting-service</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-service-registry</module>
+        <module>spring-cloud-api-gateway</module>
     </modules>
 
     <dependencyManagement>
