@@ -6,6 +6,7 @@
 * Build a Spring Cloud API Gateway using Spring Boot
 * Register the Spring Cloud API Gateway at Eureka  
 * Expose your "Greeting" Rest API using the API Gateway
+* Build an API Gateway filter
 
 ## Getting started
 
@@ -17,6 +18,8 @@
 Hints:
 
 * Create a new Spring Boot application in a separate module
+* When implementing the Post filter, remember to create a post endpoint 
+and call it to run the filter.
 
 Starter dependencies:
 
@@ -94,7 +97,7 @@ cd spring-boot-greeting-service
 mvn spring-boot:run -Dspring.profiles.active=portuguese
 ```
 
-## Config server call the REST API to fetch the configuration for 
+## Config server call the REST API to fetch the configuration for
 
 http://config-server:8888/{spring.application.name}/{profile}
 
