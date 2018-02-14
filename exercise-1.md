@@ -32,13 +32,13 @@ Depending on your experience you can go through the next steps of this assignmen
 
 ## Getting started
 
-https://start.spring.io
+[https://start.spring.io](https://start.spring.io)
 
 Hints:
 
-Starter dependencies:
-* spring-boot-starter-web
-* spring-boot-starter-actuator
+Sprint Boot Starter Maven dependencies:
+* `spring-boot-starter-web` 
+* `spring-boot-starter-actuator`
 
 ## Actuator endpoints
 
