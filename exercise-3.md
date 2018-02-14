@@ -8,9 +8,9 @@
 
 ## Getting started
 
-* http://projects.spring.io/spring-cloud/
-* https://start.spring.io
-* https://spring.io/guides/gs/service-registration-and-discovery/
+* [http://projects.spring.io/spring-cloud/](http://projects.spring.io/spring-cloud/)
+* [https://start.spring.io](https://start.spring.io)
+* [https://spring.io/guides/gs/service-registration-and-discovery/](https://spring.io/guides/gs/service-registration-and-discovery/)
 
 Hints:
 
@@ -18,7 +18,7 @@ Hints:
 * Register the config server at Eureka
 
 Starter dependencies:
-* spring-cloud-starter-eureka
+* `spring-cloud-starter-eureka`
 
 ## Run the applications
 
@@ -66,7 +66,7 @@ mvn spring-boot:run -Dspring.profiles.active=portuguese
 
 ## Config server call the REST API to fetch the configuration for 
 
-http://config-server:8888/{spring.application.name}/{profile}
+`http://config-server:8888/{spring.application.name}/{profile}`
 
 * The default configuration: [http://localhost:8888/greeting-service/default](http://localhost:8888/greeting-service/default)
 * The Dutch profile: [http://localhost:8888/greeting-service/dutch](http://localhost:8888/greeting-service/dutch)
