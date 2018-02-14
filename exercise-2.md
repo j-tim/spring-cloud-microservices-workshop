@@ -10,13 +10,13 @@
 
 To get your started we turned the project into a multi maven module for you!
 
-* http://projects.spring.io/spring-cloud/
-* https://start.spring.io
+* [http://projects.spring.io/spring-cloud/](http://projects.spring.io/spring-cloud/)
+* [https://start.spring.io](https://start.spring.io)
 
 Hints:
 
 * Create a new Spring Boot application in a separate module
-* Introduce a bootstrap.yml
+* Introduce a `bootstrap.yml`
 * Use the Spring Cloud BOM (Bill of materials)
 
 Starter dependencies:
