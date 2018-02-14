@@ -10,8 +10,8 @@
 
 To get your started we turned the project into a multi maven module for you!
 
-* http://projects.spring.io/spring-cloud/
-* https://start.spring.io
+* [http://projects.spring.io/spring-cloud/](http://projects.spring.io/spring-cloud/)
+* [https://start.spring.io](https://start.spring.io)
 
 Hints:
 
@@ -67,7 +67,7 @@ mvn spring-boot:run -Dspring.profiles.active=portuguese
 
 ## Config server call the REST API to fetch the configuration for 
 
-http://config-server:8888/{spring.application.name}/{profile}
+`http://config-server:8888/{spring.application.name}/{profile}`
 
 * The default configuration: [http://localhost:8888/greeting-service/default](http://localhost:8888/greeting-service/default)
 * The Dutch profile: [http://localhost:8888/greeting-service/dutch](http://localhost:8888/greeting-service/dutch)
