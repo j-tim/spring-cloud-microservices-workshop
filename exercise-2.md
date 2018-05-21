@@ -2,7 +2,7 @@
 
 ## Goal
 
-* Build a Spring Cloud config server using Spring Boot
+* Build a Spring Cloud config server using Spring Boot 1.5.x
 * Serve the "Greeting" service configuration using the config server
 * Load the configuration for your "Greeting" service from the config server 
 
@@ -12,6 +12,7 @@ To get your started we turned the project into a multi maven module for you!
 
 * [http://projects.spring.io/spring-cloud/](http://projects.spring.io/spring-cloud/)
 * [https://start.spring.io](https://start.spring.io)
+* [https://cloud.spring.io](https://cloud.spring.io)
 
 Hints:
 
