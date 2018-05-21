@@ -20,9 +20,9 @@ Hints:
 
 Starter dependencies:
 
-* `spring-cloud-starter-zuul`
-* `spring-cloud-starter-eureka-server`
-* `spring-cloud-starter-eureka`
+* `spring-cloud-starter-netflix-zuul`
+* `spring-cloud-starter-netflix-eureka-server`
+* `spring-cloud-starter-netflix-eureka-client`
 
 ## Run the applications
 
