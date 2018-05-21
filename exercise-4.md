@@ -23,9 +23,9 @@ and call it to run the filter.
 
 Starter dependencies:
 
-* `spring-cloud-starter-zuul`
-* `spring-cloud-starter-eureka-server`
-* `spring-cloud-starter-eureka` or `spring-cloud-config-client`
+* `spring-cloud-starter-netflix-zuul`
+* `spring-cloud-starter-netflix-eureka-server`
+* `spring-cloud-starter-netflix-eureka-client` or `spring-cloud-config-client`
 
 ## Run the applications
 
