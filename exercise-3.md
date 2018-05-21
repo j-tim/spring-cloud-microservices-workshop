@@ -10,6 +10,7 @@
 
 * [http://projects.spring.io/spring-cloud/](http://projects.spring.io/spring-cloud/)
 * [https://start.spring.io](https://start.spring.io)
+* [https://cloud.spring.io](https://cloud.spring.io)
 * [https://spring.io/guides/gs/service-registration-and-discovery/](https://spring.io/guides/gs/service-registration-and-discovery/)
 
 Hints:
@@ -18,7 +19,7 @@ Hints:
 * Register the config server at Eureka
 
 Starter dependencies:
-* `spring-cloud-starter-eureka`
+* ` spring-cloud-starter-netflix-eureka-client`
 
 ## Run the applications
 
@@ -81,4 +82,3 @@ mvn spring-boot:run -Dspring.profiles.active=portuguese
 * Health endpoint: [http://localhost:8080/health](http://localhost:8080/health)
 * Info endpoint: [http://localhost:8080/info](http://localhost:8080/info)
 * Env endpoint: [http://localhost:8080/env](http://localhost:8080/env)
-
